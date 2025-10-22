@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Contrail+One&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="clock">
+      <div class="clock__circle">
+        <div class="clock__rounder"></div>
+        <div class="clock__hour" id="clock-hour"></div>
+        <div class="clock__minutes" id="clock-minutes"></div>
+      </div>
+
+      <div>
+        <div class="clock__date">
+          <span class="clock__day-week" id="date-day-week"></span>
+
+          <div>
+            <span class="clock__month" id="date-month"></span>
+            <span class="clock__day" id="date-day"></span>
+            <span class="clock__year" id="date-year"></span>
+          </div>
+        </div>
+
+        <div class="clock__text">
+          <span class="clock__text-hour" id="text-hour"></span>
+          <span class="clock__text-minutes" id="text-minutes"></span>
+          <span class="clock__text-ampm" id="text-ampm"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id='quotes'>
+    <p id="quote-quote">here goes a beautiful quote</p>
+    <p id="quote-author">-author</p>
+  </div>
+  <div id="weatherInfo">
+    here goes the weather of your place
+  </div>
+  <div id="yearendTimer">
+  </div>
+  <div id='sticky-notes'>
+    <h2>Sticky Notes</h2>
+    <button id="addNoteBtn">Add new note</button>
+  </div>
+
+  <script type="module" src="./javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
