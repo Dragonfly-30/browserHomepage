@@ -1,4 +1,5 @@
-import { WEATHERAPI_KEY } from "./config.js"
+// import { WEATHERAPI_KEY } from "../config.js"
+import { WEATHERAPI_KEY } from "../../config.js"
 
 export function weatherData() {
   const base_url = 'https://api.openweathermap.org/data/2.5/weather'

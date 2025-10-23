@@ -1,10 +1,12 @@
 
-import { startYearCountdown } from './yeartimer.js';
-import { setupStickyNotes } from './stickyNotes.js';
-// import { weatherData } from './weather.js';
+import { startYearCountdown } from './yearend/yeartimer.js';
+import { setupStickyNotes } from './stickynotes/stickyNotes.js';
 import { weatherData } from './weather/weather.js'
-import { quoteFun } from './quotes.js';
-import { wallClock } from './clock.js';
+import { quoteFun } from './quotes/quotes.js';
+import { wallClock } from './clock/clock.js';
+import { progressBar } from './yearend/prgressBar.js';
+
+
 // Initialize countdown
 startYearCountdown('yearendTimer');
 
@@ -18,5 +20,10 @@ weatherData();
 quoteFun();
 
 // clock
-wallClock()
+wallClock();
+
+// progressBar
+progressBar();
+
+console.log("hello jaan chalja yaarr")
 

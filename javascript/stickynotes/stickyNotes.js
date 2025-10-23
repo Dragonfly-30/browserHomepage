@@ -1,9 +1,11 @@
 export function setupStickyNotes(buttonId, containerId) {
   let noteCounter = 0;
+  console.log("1st ", noteCounter)
   let stickyNoteBtn = document.querySelector(`#${buttonId}`); // this is for addNoteBtn in html
 
   stickyNoteBtn.addEventListener('click', function() {
     noteCounter++;
+    console.log("2nd ", noteCounter)
     let noteTextArea = document.createElement('textarea');  // creating textarea
     let currentNoteID = noteCounter;
     noteTextArea.id = `note-${currentNoteID}`;

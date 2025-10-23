@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homepage</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,15 +50,21 @@
   <div id="weatherInfo">
     here goes the weather of your place
   </div>
+  </div>
   <div id="yearendTimer">
   </div>
-  <div id='sticky-notes'>
-    <h2>Sticky Notes</h2>
-    <button id="addNoteBtn">Add new note</button>
-  </div>
 
-  <script type="module" src="./javascript/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <div>
+    <div id="progress-bar">
+      <div id="progress-bar-fill"></div>
+    </div>
+    <div id='sticky-notes'>
+      <h2>Sticky Notes</h2>
+      <button id="addNoteBtn">Add new note</button>
+    </div>
+
+    <script type="module" src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
