@@ -7,11 +7,12 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="./css/styles.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Contrail+One&family=Kalam:wght@300;400;700&display=swap"
-    rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+
+  <!--   href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Contrail+One&family=Kalam:wght@300;400;700&display=swap" -->
+  <!--   rel="stylesheet"> -->
 </head>
 
 <body>
@@ -50,21 +51,20 @@
   <div id="weatherInfo">
     here goes the weather of your place
   </div>
-  </div>
-  <div id="yearendTimer">
-  </div>
 
-  <div>
+  <div id="yearendTimer">
+    <div id="timer-text">Time until 2026: X days, Y hours...</div>
     <div id="progress-bar">
       <div id="progress-bar-fill"></div>
     </div>
-    <div id='sticky-notes'>
-      <h2>Sticky Notes</h2>
-      <button id="addNoteBtn">Add new note</button>
-    </div>
+  </div>
+  <div id='sticky-notes'>
+    <h2>Sticky Notes</h2>
+    <button id="addNoteBtn">Add new note</button>
+  </div>
 
-    <script type="module" src="./javascript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 
