@@ -1,13 +1,33 @@
 export function setupStickyNotes(buttonId, containerId) {
-  let noteCounter = 0;
-  console.log("1st ", noteCounter)
+  let IdNumeric = 0;
+
+  let noteKeys = Object.keys(localStorage).filter((key) => {
+    return key.startsWith('note-');
+  })
+
+
+  if (noteKeys.length > 0) {
+    noteKeys.sort((a, b) => {
+      const numA = parseInt(a.replace('note-', ''))
+      const numB = parseInt(b.replace('note-', ''))
+
+      return numA - numB;
+    });
+
+
+    const lastKey = noteKeys[noteKeys.length - 1];
+    IdNumeric = parseInt(lastKey.replace('note-', '')) || 0;
+
+  }
+
+
   let stickyNoteBtn = document.querySelector(`#${buttonId}`); // this is for addNoteBtn in html
 
   stickyNoteBtn.addEventListener('click', function() {
-    noteCounter++;
-    console.log("2nd ", noteCounter)
+    IdNumeric++;
+    // console.log("2nd ", IdNumeric)
     let noteTextArea = document.createElement('textarea');  // creating textarea
-    let currentNoteID = noteCounter;
+    let currentNoteID = IdNumeric;
     noteTextArea.id = `note-${currentNoteID}`;
     noteTextArea.classList.add('note-box');
 
@@ -54,5 +74,8 @@ export function setupStickyNotes(buttonId, containerId) {
 
     noteTextArea.addEventListener('input', savedNotes)
 
+    window.addEventListener("load", (event) => {
+      console.log("page is fully loaded");
+    });
   });
 }
